@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="8">
+<Container version="9">
   <Name>RabbitMQ-Deluxe</Name>
   <Beta>False</Beta>
   <Repository>vic10us/rabbitmq:mqtt</Repository>
@@ -20,38 +20,6 @@
   <Environment/>
   <Networking>
     <Mode>bridge</Mode>
-    <!-- <Publish>
-      <Port>
-        <HostPort>15672</HostPort>
-        <ContainerPort>15672</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5672</HostPort>
-        <ContainerPort>5672</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>25672</HostPort>
-        <ContainerPort>25672</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>15675</HostPort>
-        <ContainerPort>15675</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>1883</HostPort>
-        <ContainerPort>1883</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>61613</HostPort>
-        <ContainerPort>61613</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port> 
-    </Publish>-->
   </Networking>
   <Data>
     <Volume>
