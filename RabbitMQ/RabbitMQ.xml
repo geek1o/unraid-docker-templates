@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="7">
+<Container version="8">
   <Name>RabbitMQ-Deluxe</Name>
   <Beta>False</Beta>
   <Repository>vic10us/rabbitmq:mqtt</Repository>
@@ -50,8 +50,8 @@
         <HostPort>61613</HostPort>
         <ContainerPort>61613</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port> -->
-    </Publish>
+      </Port> 
+    </Publish>-->
   </Networking>
   <Data>
     <Volume>
