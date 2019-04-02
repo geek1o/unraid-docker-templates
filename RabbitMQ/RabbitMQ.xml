@@ -66,7 +66,6 @@
   <Environment/>
   <Labels/>
   <Config Name="Home" Target="/var/lib/rabbitmq" Default="" Mode="rw" Description="Container Path: /var/lib/rabbitmq" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/rabbitmq</Config>
-  <Config Name="RabbitMQ Enabled Plugins" Target="/etc/rabbitmq/enabled_plugins" Default="" Mode="rw" Description="Container Path: /etc/rabbitmq/enabled_plugins" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rabbitmq_enabled_plugins</Config>
   <Config Name="RabbitMQ-Management" Target="15672" Default="" Mode="tcp" Description="Container Port: 15672" Type="Port" Display="always" Required="false" Mask="false">15672</Config>
   <Config Name="RabbitMQ-AMQP" Target="5672" Default="5672" Mode="tcp" Description="Container Port: 5672" Type="Port" Display="always" Required="false" Mask="false">5672</Config>
   <Config Name="RabbitMQ-Clustering" Target="25672" Default="25672" Mode="tcp" Description="Container Port: 25672" Type="Port" Display="always" Required="false" Mask="false">25672</Config>
