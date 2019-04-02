@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:15672]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/DEXSinc/unraid-docker-templates/master/RabbitMQ/icon.png/Icon>
+  <Icon>https://raw.githubusercontent.com/DEXSinc/unraid-docker-templates/master/RabbitMQ/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
