@@ -32,7 +32,7 @@
   <Config Name="RabbitMQ-AMQP" Target="5672" Default="5672" Mode="tcp" Description="Container Port: 5672" Type="Port" Display="advanced-hide" Required="true" Mask="false">5672</Config>
   <Config Name="RabbitMQ-Clustering" Target="25672" Default="25672" Mode="tcp" Description="Container Port: 25672" Type="Port" Display="advanced-hide" Required="true" Mask="false">25672</Config>
   <Config Name="RabbitMQ-MQTT" Target="1883" Default="" Mode="tcp" Description="Container Port: 1883" Type="Port" Display="advanced-hide" Required="true" Mask="false">1883</Config>
-  <Config Name="RabbitMQ-MQTT-WS" Target="15675" Default="" Mode="tcp" Description="Container Port: 15675" Type="Port" Display="advanced-hide" Required="true" Mask="false">15675</Config>
+  <Config Name="RabbitMQ-MQTT-WS" Target="9001" Default="" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="advanced-hide" Required="true" Mask="false">9001</Config>
   <Config Name="RabbitMQ-STOMP" Target="61613" Default="" Mode="tcp" Description="Container Port: 61613" Type="Port" Display="advanced-hide" Required="true" Mask="false">61613</Config>
   <Config Name="Home" Target="/var/lib/rabbitmq" Default="/mnt/user/appdata/rabbitmq" Mode="rw" Description="Container Path: /var/lib/rabbitmq" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/rabbitmq</Config>
 </Container>
