@@ -29,5 +29,4 @@
     </Volume>
   </Data>
   <Config Name="WebUI" Target="8090" Default="8090" Mode="tcp" Description="Container Port: 8090" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
-  <Config Name="DB Folder" Target="/TS/db" Default="/mnt/user/appdata/torrserver/db" Mode="rw" Description="Container Path: /TS/db" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/torrserver/db</Config>
 </Container>
