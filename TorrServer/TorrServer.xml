@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="9">
+  <Name>TorrServer</Name>
+  <Beta>False</Beta>
+  <Repository>ksey/torrserver:latest</Repository>
+  <BindTime>true</BindTime>
+  <Network default="host">host</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Category>Cloud:</Category>
+  <Registry>https://hub.docker.com/r/ksey/torrserver</Registry>
+  <WebUI>http://[IP]:[PORT:8090]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/geek1o/unraid-docker-templates/master/TorrServer/icon.png</Icon>
+  <Overview>
+    TorrServer, stream torrent to http.
+  </Overview>
+  <Description>
+    TorrServer, stream torrent to http
+  </Description>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/torrserver/db</HostDir>
+      <ContainerDir>/TS/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Config Name="WebUI" Target="8090" Default="8090" Mode="tcp" Description="Container Port: 8090" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
+  <Config Name="DB Folder" Target="/TS/db" Default="/mnt/user/appdata/torrserver/db" Mode="rw" Description="Container Path: /TS/db" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/torrserver/db</Config>
+</Container>
