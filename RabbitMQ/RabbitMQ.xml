@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <Container version="9">
-  <Name>RabbitMQ-Deluxe</Name>
+  <Name>RabbitMQ</Name>
   <Beta>False</Beta>
-  <Repository>vic10us/rabbitmq:mqtt</Repository>
+  <Repository>rabbitmq:latest</Repository>
   <BindTime>true</BindTime>
   <Network default="bridge">bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Category>Cloud:</Category>
-  <Registry>https://registry.hub.docker.com/u/vic10us/rabbitmq/</Registry>
+  <Registry>https://registry.hub.docker.com/_/rabbitmq</Registry>
   <WebUI>http://[IP]:[PORT:15672]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/DEXSinc/unraid-docker-templates/master/RabbitMQ/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/geek1o/unraid-docker-templates/master/RabbitMQ/icon.png</Icon>
   <Overview>
-    RabbitMQ Server with Management,MQTT,MQTT-WS,Clustering and STOMP plugin support added.
+    RabbitMQ Server with Management plugin.
   </Overview>
   <Description>
-    RabbitMQ Server with Management,MQTT,MQTT-WS,Clustering and STOMP plugin support added.
+    RabbitMQ Server with Management plugin.
   </Description>
   <Environment/>
   <Networking>
@@ -31,8 +31,5 @@
   <Config Name="RabbitMQ-Management" Target="15672" Default="" Mode="tcp" Description="Container Port: 15672" Type="Port" Display="always-hide" Required="true" Mask="false">15672</Config>
   <Config Name="RabbitMQ-AMQP" Target="5672" Default="5672" Mode="tcp" Description="Container Port: 5672" Type="Port" Display="advanced-hide" Required="true" Mask="false">5672</Config>
   <Config Name="RabbitMQ-Clustering" Target="25672" Default="25672" Mode="tcp" Description="Container Port: 25672" Type="Port" Display="advanced-hide" Required="true" Mask="false">25672</Config>
-  <Config Name="RabbitMQ-MQTT" Target="1883" Default="" Mode="tcp" Description="Container Port: 1883" Type="Port" Display="advanced-hide" Required="true" Mask="false">1883</Config>
-  <Config Name="RabbitMQ-MQTT-WS" Target="9001" Default="" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="advanced-hide" Required="true" Mask="false">9001</Config>
-  <Config Name="RabbitMQ-STOMP" Target="61613" Default="" Mode="tcp" Description="Container Port: 61613" Type="Port" Display="advanced-hide" Required="true" Mask="false">61613</Config>
   <Config Name="Home" Target="/var/lib/rabbitmq" Default="/mnt/user/appdata/rabbitmq" Mode="rw" Description="Container Path: /var/lib/rabbitmq" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/rabbitmq</Config>
 </Container>
