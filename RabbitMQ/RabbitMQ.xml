@@ -2,7 +2,7 @@
 <Container version="9">
   <Name>RabbitMQ</Name>
   <Beta>False</Beta>
-  <Repository>rabbitmq:latest</Repository>
+  <Repository>rabbitmq:management</Repository>
   <BindTime>true</BindTime>
   <Network default="bridge">bridge</Network>
   <Shell>sh</Shell>
