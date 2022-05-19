@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Category>Cloud:</Category>
-  <Registry>https://hub.docker.com/r/ksey/torrserver</Registry>
+  <Registry>https://hub.docker.com/r/solopasha/torrserver</Registry>
   <WebUI>http://[IP]:[PORT:8090]/</WebUI>
   <Icon>https://raw.githubusercontent.com/geek1o/unraid-docker-templates/master/TorrServer/icon.png</Icon>
   <Overview>
@@ -24,8 +24,13 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/torrserver/db</HostDir>
-      <ContainerDir>/TS/db</ContainerDir>
+      <ContainerDir>/torrserver/db</ContainerDir>
       <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/etc/localtime</HostDir>
+      <ContainerDir>/etc/localtime</ContainerDir>
+      <Mode>ro</Mode>
     </Volume>
   </Data>
   <Config Name="WebUI" Target="8090" Default="8090" Mode="tcp" Description="Container Port: 8090" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
