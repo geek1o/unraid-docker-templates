@@ -2,7 +2,7 @@
 <Container version="9">
   <Name>TorrServer</Name>
   <Beta>False</Beta>
-  <Repository>ksey/torrserver:latest</Repository>
+  <Repository>solopasha/torrserver:latest</Repository>
   <BindTime>true</BindTime>
   <Network default="host">host</Network>
   <Shell>sh</Shell>
